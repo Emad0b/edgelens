@@ -1,0 +1,8 @@
+.venv/
+.deps/
+__pycache__/
+.pytest_cache/
+.DS_Store
+apple/.build/
+apple/Sources/EdgeLens/Resources/*.mlpackage/
+reports/device-*.json

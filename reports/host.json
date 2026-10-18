@@ -1,0 +1,283 @@
+{
+  "fp32": {
+    "test_accuracy": 0.9777777777777777,
+    "validation_accuracy": 0.96875,
+    "confusion_matrix": [
+      [
+        36,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        36,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        34,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        37,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        35,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        36,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        36,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        34,
+        0,
+        2
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        34,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        34
+      ]
+    ],
+    "host_numpy_p50_ms": 0.0472,
+    "host_numpy_p95_ms": 0.051509999999999986,
+    "apple_device_latency_ms": null,
+    "apple_process_memory_bytes": null
+  },
+  "int8_weight_simulation": {
+    "test_accuracy": 0.9805555555555555,
+    "validation_accuracy": 0.96875,
+    "confusion_matrix": [
+      [
+        36,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        36,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        34,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        37,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        36,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        36,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        36,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        34,
+        0,
+        2
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        34,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        34
+      ]
+    ],
+    "host_numpy_p50_ms": 0.047,
+    "host_numpy_p95_ms": 0.05050999999999999,
+    "apple_device_latency_ms": null,
+    "apple_process_memory_bytes": null
+  },
+  "paired_accuracy_delta_95ci": [
+    0.0,
+    0.008333333333333333
+  ],
+  "tensor_payload_bytes": {
+    "fp32": 19240,
+    "int8": 5328
+  },
+  "protocol": {
+    "seed": 17,
+    "train": 1149,
+    "validation": 288,
+    "test": 360,
+    "dataset": "scikit-learn bundled UCI optical recognition digits, 8x8, 10 classes",
+    "fingerprint": "127bf61ecec3c27db4c32b3e7683c9f24efde4daf611a826eb1d5d0b859374b5",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "numpy": "1.26.4",
+    "timing": "warm single-sample NumPy CPU forward; 50 warmups, 500 measurements; excludes preprocessing",
+    "caveat": "INT8 weights dequantized for NumPy inference: compression error simulation, not integer compute or Core ML speed."
+  },
+  "validation_gate_passed": true
+}
