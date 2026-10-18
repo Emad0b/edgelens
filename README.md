@@ -33,6 +33,7 @@ pip install -r requirements-mac.txt
 # Use the committed weights, or reproduce them first:
 # OPENBLAS_NUM_THREADS=1 python -m edgelens.train
 python -m edgelens.export_coreml
+python -m edgelens.evaluate_coreml
 cd apple
 swift run -c release EdgeLens
 ```
@@ -65,4 +66,5 @@ Code: MIT. Dataset: scikit-learn's bundled copy of UCI Optical Recognition of Ha
 Core ML implementation follows Apple's [weight quantization guide](https://github.com/apple/coremltools/blob/main/docs-guides/source/opt-quantization-api.md). Use Apple's [Xcode performance tools](https://developer.apple.com/documentation/coreml/analyzing-a-core-ml-model-s-performance-in-xcode) to validate hardware placement. The included macOS CI workflow has not yet run remotely.
 
 The measured run reached the fixed 220-iteration training limit with a convergence warning. This is retained as a limitation; no additional training was selected using test performance.
+
 
