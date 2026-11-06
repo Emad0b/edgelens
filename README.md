@@ -1,5 +1,7 @@
 # EdgeLens
 
+EdgeLens tests what happens when you shrink a model that recognises handwritten digits. Use it to compare model size and accuracy in Python and to measure speed on compatible Apple hardware with the macOS benchmark app.
+
 A reproducible compression experiment and native macOS Core ML benchmark app. Compare a small digit classifier before and after weight compression without confusing file size, inference speed and numerical accuracy.
 
 ## Verification status
